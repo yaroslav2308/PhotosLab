@@ -8,9 +8,19 @@
 import UIKit
 
 class PhotosCollectionViewController: UICollectionViewController {
-
+    let itemsPerRow: CGFloat = 2
+    let sectionsInsets = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+//        layout.itemSize = CGSize(width: 50, height: 50)
+//        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+//        layout.minimumLineSpacing = 1
+//        layout.minimumInteritemSpacing = 1
+//        layout.scrollDirection = .horizontal
+//
+//        collectionView.showsVerticalScrollIndicator = false
     }
 
     /*
@@ -50,26 +60,26 @@ class PhotosCollectionViewController: UICollectionViewController {
 }
 
 extension PhotosCollectionViewController: UICollectionViewDelegateFlowLayout {
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let itemsPerRow: CGFloat = 2
-        let paddingWidth = 20 * (itemsPerRow + 1)
+        let paddingWidth = sectionsInsets.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidth
         let widthPerItem = availableWidth / itemsPerRow
         let heightPerItem = widthPerItem
         return CGSize(width: widthPerItem, height: heightPerItem)
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        return sectionsInsets
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return sectionsInsets.left
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+        return sectionsInsets.left
     }
-    
+
 }
