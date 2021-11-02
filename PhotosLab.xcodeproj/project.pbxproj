@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1230A3F12731F83A00262FD5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1230A3F02731F83A00262FD5 /* PhotoViewController.swift */; };
 		123FA5902731CC98009376DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA58F2731CC98009376DA /* AppDelegate.swift */; };
 		123FA5922731CC98009376DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123FA5912731CC98009376DA /* SceneDelegate.swift */; };
 		123FA5972731CC98009376DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123FA5952731CC98009376DA /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1230A3F02731F83A00262FD5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		123FA58C2731CC98009376DA /* PhotosLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		123FA58F2731CC98009376DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		123FA5912731CC98009376DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,8 +62,9 @@
 			children = (
 				123FA58F2731CC98009376DA /* AppDelegate.swift */,
 				123FA5912731CC98009376DA /* SceneDelegate.swift */,
-				123FA5A32731CE92009376DA /* PhotosCollectionViewController.swift */,
 				123FA5A52731D215009376DA /* PhotoCell.swift */,
+				123FA5A32731CE92009376DA /* PhotosCollectionViewController.swift */,
+				1230A3F02731F83A00262FD5 /* PhotoViewController.swift */,
 				123FA5952731CC98009376DA /* Main.storyboard */,
 				123FA5982731CC99009376DA /* Assets.xcassets */,
 				123FA59A2731CC99009376DA /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 				123FA5A42731CE93009376DA /* PhotosCollectionViewController.swift in Sources */,
 				123FA5902731CC98009376DA /* AppDelegate.swift in Sources */,
 				123FA5922731CC98009376DA /* SceneDelegate.swift in Sources */,
+				1230A3F12731F83A00262FD5 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
